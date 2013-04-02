@@ -3,20 +3,19 @@ TO DO :
 			� FAIRE :
 
 - Fonction al�atoire pour choix du premier joueur
-- Fonction placement du X ou O : pav� num�rique / demande de colonne et ligne
-- Fonction de v�rification si case d�j� utilis�e
 - Fonction coup gagnant = arr�t de la partie sinon continu
-- Fonction de comptage des coups, quand = 9 -> arr�t de la partie
-
+- Commenter
+- Faire le manuel
 
 			EN COURS :
 			
-- Fonction blabla => Romain
-- Fonction blabla => Cl�ment
-- Fonction blabla => Ga�l			
+- Fonction de v�rification si case d�j� utilis�e => romaine
+- Fonction de comptage des coups, quand = 9 -> arr�t de la partie => Cl�ment & Gaël
+			
 			
 			TERMIN� :
 			
 - Fonction changement de joueur avec compteur pair/impair ou puissance positif/n�gatif
 - Fonction J1 = X
 - Fonction J2 = O
+- Fonction placement du X ou O : pav� num�rique / demande de colonne et ligne
