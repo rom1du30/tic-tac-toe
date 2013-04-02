@@ -1,7 +1,6 @@
 #Projet BAC ISN
 
 
-
 t0 = ["A","B","C"]
 t1 = [" "]*3
 t2 = [" "]*3
@@ -31,11 +30,11 @@ def coupDeGagnant(t0,t1,t2,t3):
     if t1[0]==t1[1]==t1[2]!=" ":
         finDePartieGagnée()
     if t2[0]==t2[1]==t2[2]!=" ":
-        finDePartie()
+        finDePartieGagnée()
     if t3[0]==t3[1]==t3[2]!=" ":
         finDePartieGagnée()
     if t1[0]==t2[0]==t3[0]!=" ":
-        finDePartie()
+        finDePartieGagnée()
     if t1[1]==t2[1]==t3[1]!=" ":
         finDePartieGagnée()
     if t1[2]==t2[2]==t3[2]!=" ":
@@ -71,7 +70,8 @@ def player1(t0,t1,t2,t3):
                     print ("1",t1)
                     print ("2",t2)
                     print ("3",t3)
-                    coupDeGagnant(t0,t1,t2,t3)
+                    gagne = coupDeGagnant(t0,t1,t2,t3)
+                    return(gagne)
                     
 
 def player2(t0,t1,t2,t3):
