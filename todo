@@ -1,23 +1,22 @@
 TO DO :
 
-			À FAIRE :
+			ï¿½ FAIRE :
 
-- Fonction aléatoire pour choix du premier joueur
-- Fonction changement de joueur avec compteur pair/impair ou puissance positif/négatif
-- Fonction J1 = X
-- Fonction J2 = O
-- Fonction placement du X ou O : pavé numérique / demande de colonne et ligne
-- Fonction de vérification si case déjà utilisée
-- Fonction coup gagnant = arrêt de la partie sinon continu
-- Fonction de comptage des coups, quand = 9 -> arrêt de la partie
+- Fonction alï¿½atoire pour choix du premier joueur
+- Fonction placement du X ou O : pavï¿½ numï¿½rique / demande de colonne et ligne
+- Fonction de vï¿½rification si case dï¿½jï¿½ utilisï¿½e
+- Fonction coup gagnant = arrï¿½t de la partie sinon continu
+- Fonction de comptage des coups, quand = 9 -> arrï¿½t de la partie
 
 
 			EN COURS :
 			
 - Fonction blabla => Romain
-- Fonction blabla => Clément
-- Fonction blabla => Gaël			
+- Fonction blabla => Clï¿½ment
+- Fonction blabla => Gaï¿½l			
 			
-			TERMINÉ :
+			TERMINï¿½ :
 			
-- Fonction blabla
+- Fonction changement de joueur avec compteur pair/impair ou puissance positif/nï¿½gatif
+- Fonction J1 = X
+- Fonction J2 = O
