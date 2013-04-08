@@ -1,21 +1,22 @@
 TO DO :
 
-			� FAIRE :
+			À FAIRE :
 
-- Fonction al�atoire pour choix du premier joueur
-- Fonction coup gagnant = arr�t de la partie sinon continu
+- Fonction aléatoire pour choix du premier joueur
+- Fonction coup gagnant = arrêt de la partie sinon continu
 - Commenter
 - Faire le manuel
+- Intelligence artificielle
 
 			EN COURS :
 			
-- Fonction de v�rification si case d�j� utilis�e => romaine
-- Fonction de comptage des coups, quand = 9 -> arr�t de la partie => Cl�ment & Gaël
+- Fonction de vérification si case déjà utilisée => Romain
+- Fonction de comptage des coups, quand = 9 -> arrêt de la partie => Clément & Gaël
 			
 			
-			TERMIN� :
+			TERMINÉ :
 			
-- Fonction changement de joueur avec compteur pair/impair ou puissance positif/n�gatif
+- Fonction changement de joueur avec compteur pair/impair ou puissance positif/négatif
 - Fonction J1 = X
 - Fonction J2 = O
-- Fonction placement du X ou O : pav� num�rique / demande de colonne et ligne
+- Fonction placement du X ou O : pavé numérique / demande de colonne et ligne
