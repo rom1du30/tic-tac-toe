@@ -13,39 +13,37 @@ def player1(T):
     t2 = T[2]
     t3 = T[3]
     while coup_joue == False:
-                    coup = input("Svp Joueur n°1, quel est votre coup ? ")
-                    if not isinstance( coup , int ):
-                        print ("Rentrez un nombre svp")
-                        
-                        if coup == 1 and t3[0] == " ":
+                    coup = int(input("Svp Joueur n°1, quel est votre coup ? "))
+
+                    if coup == 1 and t3[0] == " ":
                             t3[0] = "O"
                             coup_joue = True
-                        elif coup == 2 and t3[1] == " ":
-                            t3[1] = "O"
-                            coup_joue = True
-                        elif coup == 3 and t3[2] == " ":
-                            t3[2] = "O"
-                            coup_joue = True
-                        elif coup == 4 and t2[0] == " ":
-                            t2[0] = "O"
-                            coup_joue = True
-                        elif coup == 5 and t2[1] == " ":
-                            t2[1] = "O"
-                            coup_joue = True
-                        elif coup == 6 and t2[2] == " ":
-                            t2[2] = "O"
-                            coup_joue = True
-                        elif coup == 7 and t1[0] == " ":
-                            t1[0] = "O"
-                            coup_joue = True
-                        elif coup == 8 and t1[1] == " ":
-                            t1[1] = "O"
-                            coup_joue = True
-                        elif coup == 9 and t1[2] == " ":
-                            t1[2] = "O"
-                            coup_joue = True
-                        else :
-                            print ("Pourquoi placer un pion sur une place déjà prise ? Recommencez s'il vous plaît. ")
+                    elif coup == 2 and t3[1] == " ":
+                        t3[1] = "O"
+                        coup_joue = True
+                    elif coup == 3 and t3[2] == " ":
+                        t3[2] = "O"
+                        coup_joue = True
+                    elif coup == 4 and t2[0] == " ":
+                        t2[0] = "O"
+                        coup_joue = True
+                    elif coup == 5 and t2[1] == " ":
+                        t2[1] = "O"
+                        coup_joue = True
+                    elif coup == 6 and t2[2] == " ":
+                        t2[2] = "O"
+                        coup_joue = True
+                    elif coup == 7 and t1[0] == " ":
+                        t1[0] = "O"
+                        coup_joue = True
+                    elif coup == 8 and t1[1] == " ":
+                        t1[1] = "O"
+                        coup_joue = True
+                    elif coup == 9 and t1[2] == " ":
+                        t1[2] = "O"
+                        coup_joue = True
+                    else :
+                        print ("Pourquoi placer un pion sur une place déjà prise ? Recommencez s'il vous plaît. ")
                     print (" ",t0)
                     print ("1",t1)
                     print ("2",t2)
