@@ -1,6 +1,6 @@
 #Tic Tac Toe
 import random
-import fichier from *
+import fichier from * #changementJoueur(T) Pour lancer IA si ordinateur rentré
 
 def instructions():
     print ("Bienvenue sur le plus grand challenge de tout les temps : le Tic-Tac-Toe.\n")
