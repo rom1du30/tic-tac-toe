@@ -235,9 +235,46 @@ def Win(T):
         if t1[2] == " ":
             t1[2]= "X"
             print ("Victoire de l'IA!")
+    if t1[0]=="X" and t2[0]=="X":
+        if t3[0] == " ":
+            t3[0]= "X"
+            print ("Victoire de l'IA!")
+    if t1[0]=="X" and t3[0]=="X":
+        if t2[0] == " ":
+            t2[0]= "X"
+            print ("Victoire de l'IA!")
+    if t2[0]=="X" and t3[0]=="X":
+        if t1[0] == " ":
+            t1[0]= "X"
+            print ("Victoire de l'IA!")
+    if t1[1]=="X" and t2[1]=="X":
+        if t3[1] == " ":
+            t3[1]= "X"
+            print ("Victoire de l'IA!")
+    if t1[1]=="X" and t3[1]=="X":
+        if t2[1] == " ":
+            t2[1]= "X"
+            print ("Victoire de l'IA!")
+    if t2[1]=="X" and t3[1]=="X":
+        if t1[1] == " ":
+            t1[1]= "X"
+            print ("Victoire de l'IA!")
+    if t1[2]=="X" and t2[2]=="X":
+        if t3[2] == " ":
+            t3[2]= "X"
+            print ("Victoire de l'IA!")
+    if t1[2]=="X" and t3[2]=="X":
+        if t2[2] == " ":
+            t2[2]= "X"
+            print ("Victoire de l'IA!")
+    if t2[2]=="X" and t3[2]=="X":
+        if t1[2] == " ":
+            t1[2]= "X"
+            print ("Victoire de l'IA!")
     
 
 changementJoueur(T)
+
 
 
 
