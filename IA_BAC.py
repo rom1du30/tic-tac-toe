@@ -1,6 +1,4 @@
 
-
-
 t0 = ["A","B","C"]
 t1 = [" "]*3
 t2 = [" "]*3
@@ -23,6 +21,7 @@ def player1(T):
         coup = int(input("Quel est votre coup?"))
         if coup == 1 and t3[0] == " ":
             t3[0] = "O"
+            Win(T)
             if tour == 0:
                 IA9(T)
                 tour = 719
@@ -38,6 +37,7 @@ def player1(T):
             turn = turn+1 
         if coup == 2 and t3[1] == " ":
             t3[1] = "O"
+            Win(T)
             if tour == 0:
                 IA5(T)
                 tour = 725
@@ -50,6 +50,7 @@ def player1(T):
             turn = turn+1 
         if coup == 3 and t3[2] == " ":
             t3[2] = "O"
+            Win(T)
             if tour == 0:
                 IA9(T)
                 tour = 739
@@ -68,6 +69,7 @@ def player1(T):
             turn = turn+1 
         if coup == 4 and t2[0] == " ":
             t2[0] = "O"
+            Win(T)
             if tour == 0:
                 IA5(T)
                 tour = 745
@@ -83,12 +85,14 @@ def player1(T):
             turn = turn+1 
         if coup == 5 and t2[1] == " ":
             t2[1] = "O"
+            Win(T)
             if tour == 0:
                 IA3(T)
                 tour = 753
             turn = turn+1 
         if coup == 6 and t2[2] == " ":
             t2[2] = "O"
+            Win(T)
             if tour == 0:
                 IA5(T)
                 tour = 765
@@ -103,6 +107,7 @@ def player1(T):
             t1[0] = "O"
         if coup == 8 and t1[1] == " ":
             t1[1] = "O"
+            Win(T)
             if tour == 0:
                 IA5(T)
                 tour = 785
@@ -121,6 +126,7 @@ def player1(T):
             turn = turn+1 
         if coup == 9 and t1[2] == " ":
             t1[2] = "O"
+            Win(T)
             if tour == 0:
                 IA1(T)
                 tour = 791
@@ -169,69 +175,70 @@ def IA9(T):
     t1[2] = "X"
         
 def Win(T):
-    if t1[0]==t1[1]=="X":
-        if t1[2]!= "O":
+    if t1[0]=="X" and t1[1]=="X":
+        if t1[2]== " ":
             t1[2]= "X"
             print ("Victoire de l'IA!") 
     if t1[0]==t1[2]=="X":
-        if t1[1]!= "O":
+        if t1[1] == " ":
             t1[1]= "X"
             print ("Victoire de l'IA!")
-    if t1[1]==t1[2]=="X":
-        if t1[2]!= "O":
+    if t1[1]=="X" and t1[2]=="X":
+        if t1[2] == " ":
             t1[0]= "X"
             print ("Victoire de l'IA!")
-    if t2[0]==t2[1]=="X":
-        if t2[2]!= "O":
+    if t2[0]=="X" and t2[1]=="X":
+        if t2[2] == " ":
             t2[2]= "X"
             print ("Victoire de l'IA!")
-    if t2[0]==t2[2]=="X":
-        if t2[1]!= "O":
+    if t2[0]=="X" and t2[2]=="X":
+        if t2[1] == " ":
             t2[1]= "X"
             print ("Victoire de l'IA!")
-    if t2[1]==t2[2]=="X":
-        if t2[0]!= "O":
+    if t2[1]=="X" and t2[2]=="X":
+        if t2[0] == " ":
             t2[0]= "X"
             print ("Victoire de l'IA!")
-    if t3[0]==t3[1]=="X":
-        if t3[2]!= "O":
+    if t3[0]=="X" and t3[1]=="X":
+        if t3[2] == " ":
             t3[2]= "X"
             print ("Victoire de l'IA!")
-    if t3[0]==t3[2]=="X":
-        if t3[1]!= "O":
+    if t3[0]=="X" and t3[2]=="X":
+        if t3[1] == " ":
             t3[1]= "X"
             print ("Victoire de l'IA!")
-    if t3[1]==t3[2]=="X":
-        if t3[0]!= "O":
+    if t3[1]=="X" and t3[2]=="X":
+        if t3[0] == " ":
             t3[0]= "X"
             print ("Victoire de l'IA!")
-    if t1[0]==t2[1]=="X":
-        if t3[2]!= "O":
+    if t1[0]=="X" and t2[1]=="X":
+        if t3[2] == " ":
             t3[2]= "X"
             print ("Victoire de l'IA!")
-    if t1[0]==t3[2]=="X":
-        if t2[1]!= "O":
+    if t1[0]=="X" and t3[2]=="X":
+        if t2[1] == " ":
             t2[1]= "X"
             print ("Victoire de l'IA!")
-    if t2[1]==t3[2]=="X":
-        if t1[0]!= "O":
+    if t2[1]=="X" and t3[2]=="X":
+        if t1[0] == " ":
             t1[0]= "X"
             print ("Victoire de l'IA!")
-    if t1[2]==t2[1]=="X":
-        if t3[0]!= "O":
+    if t1[2]=="X" and t2[1]=="X":
+        if t3[0] == " ":
             t3[0]= "X"
             print ("Victoire de l'IA!")
-    if t1[2]==t3[0]=="X":
-        if t2[1]!= "O":
+    if t1[2]=="X" and t3[0]=="X":
+        if t2[1] == " ":
             t2[1]= "X"
             print ("Victoire de l'IA!")
-    if t2[1]==t3[0]=="X":
-        if t1[2]!= "O":
+    if t2[1]=="X" and t3[0]=="X":
+        if t1[2] == " ":
             t1[2]= "X"
             print ("Victoire de l'IA!")
     
 
 changementJoueur(T)
+
 
 
 
