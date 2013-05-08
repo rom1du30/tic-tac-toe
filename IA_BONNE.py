@@ -45,7 +45,7 @@ def Win(T):
     if plateau[6]=="X" and plateau[7]=="X":
         if plateau[8]== " ":
             plateau[8]= "X"
-            print ("Victoire de l'IA!") 
+            print ("Victoire de l'IA!")
     if plateau[6]==plateau[8]=="X":
         if plateau[7] == " ":
             plateau[7]= "X"
@@ -150,11 +150,11 @@ def Win(T):
 
 while (jeu == True):
     plateau = ["1","2","3","4","5","6","7","8","9"]
-    tour = 0                                                                                # Compteur de tours
+    tour = 0 # Compteur de tours
     tourJoueur = random.randint(0,1)
     gagner = False
-    while (tour < 9):                                                                       # Si le compteur arrive à 9, on renvoit au cas d'égalité
-        drawboard()                                                                         # On affiche à chaque tour le plateau
+    while (tour < 9): # Si le compteur arrive à 9, on renvoit au cas d'égalité
+        drawboard() # On affiche à chaque tour le plateau
         coup = int(input("Votre placement %s ? " % (joueur1))
         # On extraie d'ici
         if coup == 1 and plateau[0] == " "
@@ -172,7 +172,7 @@ while (jeu == True):
             if tour == 753:
                 IA9(T)
                 tour = 75319
-            turn = turn+1 
+            turn = turn+1
         if coup == 2 and plateau[1] == " ":
             plateau[1] = "O"
             Win(T)
@@ -185,7 +185,7 @@ while (jeu == True):
             if tour == 7534691:
                 IA8(T)
                 print ("Damn %s, la partie avec %s se termine par égalité !" % (joueur1,joueur2))
-            turn = turn+1 
+            turn = turn+1
         if coup == 3 and plateau[2] == " ":
             plateau[2] = "O"
             Win(T)
@@ -204,7 +204,7 @@ while (jeu == True):
             if tour == 745:
                 IA9(T)
                 tour = 7459
-            turn = turn+1 
+            turn = turn+1
         if coup == 4 and plateau[3] == " ":
             plateau[3] = "O"
             Win(T)
@@ -220,14 +220,14 @@ while (jeu == True):
             if tour == 753:
                 IA6(T)
                 tour = 75346
-            turn = turn+1 
+            turn = turn+1
         if coup == 5 and plateau[4] == " ":
             plateau[4] = "O"
             Win(T)
             if tour == 0:
                 IA3(T)
                 tour = 753
-            turn = turn+1 
+            turn = turn+1
         if coup == 6 and plateau[5] == " ":
             plateau[5] = "O"
             Win(T)
@@ -240,7 +240,7 @@ while (jeu == True):
             if tour == 753:
                 IA4(T)
                 tour = 75364
-            turn = turn+1 
+            turn = turn+1
         if coup == 7 and plateau[6] == " ":
             plateau[6] = "O"
         if coup == 8 and plateau[7] == " ":
@@ -261,7 +261,7 @@ while (jeu == True):
             if tour == 7536419:
                 IA2(T)
                 print ("Damn %s, la partie avec %s se termine par égalité !" % (joueur1,joueur2))
-            turn = turn+1 
+            turn = turn+1
         if coup == 9 and plateau[8] == " ":
             plateau[8] = "O"
             Win(T)
@@ -283,37 +283,37 @@ while (jeu == True):
         
         
         
-        #if tourJoueur == 1:                                                                 # C'est au joueur 1 de jouer
-        #    placement = input("Votre placement %s ? " % (joueur1))                          # On demande quel placement il veut effectuer
-        #    if plateau[(int(placement)-1)] == placement:                                    # PAS COMPRIS
-        #        plateau[(int(placement)-1)] = "X"                                           # La croix est placée
+        #if tourJoueur == 1: # C'est au joueur 1 de jouer
+        # placement = input("Votre placement %s ? " % (joueur1)) # On demande quel placement il veut effectuer
+        # if plateau[(int(placement)-1)] == placement: # PAS COMPRIS
+        # plateau[(int(placement)-1)] = "X" # La croix est placée
         #
-        #    else:                                                                           # Si le placement est invalide, le joueur 1 recommence
-        #        print ("Le placement est invalide ou la case est déjà prise")
-        #else:                                                                               # C'est au Joueur 2 de jouer.
-        #    if joueur2.lower() == "ordinateur":                                             # Si on a choisit de jouer contre l'IA
-        #        placement = str(random.randrange(1,9))                                      # Alors l'IA place au hasard un coup
-        #        print ("Le placement de l'ordinateur est %s " % (placement))
-            #else:                                                                           # Si on a choisit de jouer contre qqun d'autre
-            #    placement = input("Votre placement %s ? " % (joueur2))                      # On demande quel placement il veut effectuer
-            #if plateau[(int(placement)-1)] == placement:                                    # PAS COMPRIS
-            #    plateau[(int(placement)-1)] = "0"                                           # Le Rond est placée
-            #    if fini("0"):                                                               # On vérifié si on a effectué un coup gagnant en appelant la def Fini.
-            #        gagner = True                                                           # Si le coup est gagnant, alors on affecte vrai à "gagner"
-            #        gagnant = joueur2                                                       # On informe que le vainqueur est le joueur 1
-            #        scoreJ2 = scoreJ2+1                                                     # On augmente de 1 son score
-            #        break
-            #    tourJoueur = 1                                                              #  Sinon on passe au Joueur 1
-            #    tour = tour+1
+        # else: # Si le placement est invalide, le joueur 1 recommence
+        # print ("Le placement est invalide ou la case est déjà prise")
+        #else: # C'est au Joueur 2 de jouer.
+        # if joueur2.lower() == "ordinateur": # Si on a choisit de jouer contre l'IA
+        # placement = str(random.randrange(1,9)) # Alors l'IA place au hasard un coup
+        # print ("Le placement de l'ordinateur est %s " % (placement))
+            #else: # Si on a choisit de jouer contre qqun d'autre
+            # placement = input("Votre placement %s ? " % (joueur2)) # On demande quel placement il veut effectuer
+            #if plateau[(int(placement)-1)] == placement: # PAS COMPRIS
+            # plateau[(int(placement)-1)] = "0" # Le Rond est placée
+            # if fini("0"): # On vérifié si on a effectué un coup gagnant en appelant la def Fini.
+            # gagner = True # Si le coup est gagnant, alors on affecte vrai à "gagner"
+            # gagnant = joueur2 # On informe que le vainqueur est le joueur 1
+            # scoreJ2 = scoreJ2+1 # On augmente de 1 son score
+            # break
+            # tourJoueur = 1 # Sinon on passe au Joueur 1
+            # tour = tour+1
             #else:
-            #    print ("le placement est invalide ou la case est déjà prise")
-    #if gagner:       # il manque pas un True ?                                              # Quand la partie est gagnée, on affiche le gagnant, le score
-    #    print ("Bravo %s, tu as gagné la partie !" % gagnant)
-    #    print ("Le score est de ",scoreJ1," pour ",joueur1,"et de",scoreJ2," pour",joueur2,)
+            # print ("le placement est invalide ou la case est déjà prise")
+    #if gagner: # il manque pas un True ? # Quand la partie est gagnée, on affiche le gagnant, le score
+    # print ("Bravo %s, tu as gagné la partie !" % gagnant)
+    # print ("Le score est de ",scoreJ1," pour ",joueur1,"et de",scoreJ2," pour",joueur2,)
     #else:
-    #    print ("Damn %s, la partie avec %s se termine par égalité !" % (joueur1,joueur2))   # Sinon, il y a égalité, les scores ne changent pas
-    #    print ("Le score est de ",scoreJ1," pour ",joueur1,"et de",scoreJ2," pour",joueur2,)
-    #   
-    if  input("Voulez-vous jouez encore ? (O ou N) ").lower() == 'n':                       # Permet de rejouer ou non
+    # print ("Damn %s, la partie avec %s se termine par égalité !" % (joueur1,joueur2)) # Sinon, il y a égalité, les scores ne changent pas
+    # print ("Le score est de ",scoreJ1," pour ",joueur1,"et de",scoreJ2," pour",joueur2,)
+    #
+    if input("Voulez-vous jouez encore ? (O ou N) ").lower() == 'n': # Permet de rejouer ou non
         jeu = False
    

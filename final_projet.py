@@ -10,11 +10,11 @@ def instructions():
     print ("La partie est gagnée quand un des joueurs a réussi à aligner 3 symboles de façon horizontale, verticale ou en diagonale.")
     print ("Deux modes possible : un contre un ou contre l'ordinateur.\n")
     print ("Vous ferez votre placement en entrant un nombre, 1 - 9. Le nombre correspond à la case du tableau comme illustré :\n")
-    print ("                                     7 | 8 | 9")
-    print ("                                    -----------")
-    print ("                                     4 | 5 | 6")
-    print ("                                    -----------")
-    print ("                                     1 | 2 | 3\n")
+    print (" 7 | 8 | 9")
+    print (" -----------")
+    print (" 4 | 5 | 6")
+    print (" -----------")
+    print (" 1 | 2 | 3\n")
     print ("Préparez-vous, humains. L'utltime combat va commencer.\n")
     return()
 
@@ -103,7 +103,7 @@ while (jeu == True):
         print ("Damn %s, la partie avec %s est un pat..." % (joueur1,joueur2))
         print ("Le score est de ",scoreJ1," pour ",joueur1,"et de",scoreJ2," pour",joueur2,)
        
-    if  input("Voulez-vous jouez encore ? (O ou N) ").lower() == 'n':
+    if input("Voulez-vous jouez encore ? (O ou N) ").lower() == 'n':
         jeu = False
    
 print ("Au revoir !")

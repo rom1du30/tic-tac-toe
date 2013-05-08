@@ -34,7 +34,7 @@ def player1(T):
             if tour == 753:
                 IA9(T)
                 tour = 75319
-            turn = turn+1 
+            turn = turn+1
         if coup == 2 and t3[1] == " ":
             t3[1] = "O"
             Win(T)
@@ -47,7 +47,7 @@ def player1(T):
             if tour == 7534691:
                 IA8(T)
                 print("Partie nulle!")
-            turn = turn+1 
+            turn = turn+1
         if coup == 3 and t3[2] == " ":
             t3[2] = "O"
             Win(T)
@@ -66,7 +66,7 @@ def player1(T):
             if tour == 745:
                 IA9(T)
                 tour = 7459
-            turn = turn+1 
+            turn = turn+1
         if coup == 4 and t2[0] == " ":
             t2[0] = "O"
             Win(T)
@@ -82,14 +82,14 @@ def player1(T):
             if tour == 753:
                 IA6(T)
                 tour = 75346
-            turn = turn+1 
+            turn = turn+1
         if coup == 5 and t2[1] == " ":
             t2[1] = "O"
             Win(T)
             if tour == 0:
                 IA3(T)
                 tour = 753
-            turn = turn+1 
+            turn = turn+1
         if coup == 6 and t2[2] == " ":
             t2[2] = "O"
             Win(T)
@@ -102,7 +102,7 @@ def player1(T):
             if tour == 753:
                 IA4(T)
                 tour = 75364
-            turn = turn+1 
+            turn = turn+1
         if coup == 7 and t1[0] == " ":
             t1[0] = "O"
         if coup == 8 and t1[1] == " ":
@@ -123,7 +123,7 @@ def player1(T):
             if tour == 7536419:
                 IA2(T)
                 print("Partie nulle!")
-            turn = turn+1 
+            turn = turn+1
         if coup == 9 and t1[2] == " ":
             t1[2] = "O"
             Win(T)
@@ -178,7 +178,7 @@ def Win(T):
     if t1[0]=="X" and t1[1]=="X":
         if t1[2]== " ":
             t1[2]= "X"
-            print ("Victoire de l'IA!") 
+            print ("Victoire de l'IA!")
     if t1[0]==t1[2]=="X":
         if t1[1] == " ":
             t1[1]= "X"
