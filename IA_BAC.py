@@ -1,4 +1,3 @@
-
 t0 = ["A","B","C"]
 t1 = [" "]*3
 t2 = [" "]*3
@@ -6,13 +5,18 @@ t3 = [" "]*3
 
 T = (t0,t1,t2,t3)
 
+import sys
+
 def changementJoueur(T):
-            IA7(T)
-            print (" ",t0)
-            print ("1",t1)
-            print ("2",t2)
-            print ("3",t3)
-            player1(T)
+            print("(L'IA commence toujours)")
+            Jeu = int(input("Voulez-vous jouer? (1 = oui, 2 = non)"))
+            if Jeu == 1:
+                IA7(T)
+                Affichage(T)
+                player1(T)
+            if Jeu == 2:
+                print("Au revoir :)")
+                sys.exit()
                 
 def player1(T):
     turn = 0
@@ -22,13 +26,14 @@ def player1(T):
         if coup == 1 and t3[0] == " ":
             t3[0] = "O"
             Win(T)
+            print(tour)
             if tour == 0:
                 IA9(T)
                 tour = 719
             if tour == 75382:
                 IA9(T)
                 tour = 7538219
-            if coup == 75364:
+            if tour == 75364:
                 IA9(T)
                 tour = 7536419
             if tour == 753:
@@ -42,12 +47,15 @@ def player1(T):
                 IA5(T)
                 tour = 725
             if tour == 753:
-                IA8
+                IA8(T)
                 tour = 75328
             if tour == 7534691:
                 IA8(T)
                 print("Partie nulle!")
-            turn = turn+1
+                print("Nouvelle partie!")
+                Reini(T)
+                changementJoueur(T)
+                turn = turn+1
         if coup == 3 and t3[2] == " ":
             t3[2] = "O"
             Win(T)
@@ -79,6 +87,9 @@ def player1(T):
             if tour == 7532891:
                 IA6(T)
                 print("Partie nulle!")
+                print("Nouvelle partie!")
+                Reini(T)
+                changementJoueur(T)
             if tour == 753:
                 IA6(T)
                 tour = 75346
@@ -99,6 +110,9 @@ def player1(T):
             if tour == 7538219:
                 IA4(T)
                 print("Partie nulle!")
+                print("Nouvelle partie!")
+                Reini(T)
+                changementJoueur(T)
             if tour == 753:
                 IA4(T)
                 tour = 75364
@@ -123,7 +137,10 @@ def player1(T):
             if tour == 7536419:
                 IA2(T)
                 print("Partie nulle!")
-            turn = turn+1
+                print("Nouvelle partie!")
+                Reini(T)
+                changementJoueur(T)
+                turn = turn+1
         if coup == 9 and t1[2] == " ":
             t1[2] = "O"
             Win(T)
@@ -140,10 +157,7 @@ def player1(T):
                 IA1(T)
                 tour = 7534691
             turn = turn+1
-        print (" ",t0)
-        print ("1",t1)
-        print ("2",t2)
-        print ("3",t3)
+        Affichage(T)
     return()
 
 
@@ -179,144 +193,205 @@ def Win(T):
         if t1[2]== " ":
             t1[2]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t1[0]==t1[2]=="X":
         if t1[1] == " ":
             t1[1]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t1[1]=="X" and t1[2]=="X":
         if t1[2] == " ":
             t1[0]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t2[0]=="X" and t2[1]=="X":
         if t2[2] == " ":
             t2[2]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t2[0]=="X" and t2[2]=="X":
         if t2[1] == " ":
             t2[1]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t2[1]=="X" and t2[2]=="X":
         if t2[0] == " ":
             t2[0]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t3[0]=="X" and t3[1]=="X":
         if t3[2] == " ":
             t3[2]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t3[0]=="X" and t3[2]=="X":
         if t3[1] == " ":
             t3[1]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t3[1]=="X" and t3[2]=="X":
         if t3[0] == " ":
             t3[0]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t1[0]=="X" and t2[1]=="X":
         if t3[2] == " ":
             t3[2]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t1[0]=="X" and t3[2]=="X":
         if t2[1] == " ":
             t2[1]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t2[1]=="X" and t3[2]=="X":
         if t1[0] == " ":
             t1[0]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t1[2]=="X" and t2[1]=="X":
         if t3[0] == " ":
             t3[0]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t1[2]=="X" and t3[0]=="X":
         if t2[1] == " ":
             t2[1]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t2[1]=="X" and t3[0]=="X":
         if t1[2] == " ":
             t1[2]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t1[0]=="X" and t2[0]=="X":
         if t3[0] == " ":
             t3[0]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t1[0]=="X" and t3[0]=="X":
         if t2[0] == " ":
             t2[0]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t2[0]=="X" and t3[0]=="X":
         if t1[0] == " ":
             t1[0]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t1[1]=="X" and t2[1]=="X":
         if t3[1] == " ":
             t3[1]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t1[1]=="X" and t3[1]=="X":
         if t2[1] == " ":
             t2[1]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t2[1]=="X" and t3[1]=="X":
         if t1[1] == " ":
             t1[1]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t1[2]=="X" and t2[2]=="X":
         if t3[2] == " ":
             t3[2]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t1[2]=="X" and t3[2]=="X":
         if t2[2] == " ":
             t2[2]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            print("Nouvelle partie!")
+            Reini(T)
+            changementJoueur(T)
     if t2[2]=="X" and t3[2]=="X":
         if t1[2] == " ":
             t1[2]= "X"
             print ("Victoire de l'IA!")
+            Affichage(T)
+            changementJoueur(T)
+
+
+def Reini(T):
+    t1[0]=t1[1]=t1[2]=t2[0]=t2[1]=t2[2]=t3[0]=t3[1]=t3[2] =  " "
+    return(T)
+
+def Affichage(T):
+    print (" ",t0)
+    print ("1",t1)
+    print ("2",t2)
+    print ("3",t3)
+    return()
+    
     
 
 changementJoueur(T)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                          
