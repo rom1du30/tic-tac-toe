@@ -1,4 +1,3 @@
-
 #Projet BAC ISN
 
 from random import *

@@ -75,7 +75,7 @@ while (jeu == True):
         if joueur2.lower() == "ia":
             import sys
             sys.path.append("c:\\python33")
-            import IA_BAC
+            import ia_finale
         
         if tourJoueur == 1:
             placement = input("Votre placement %s ? " % (joueur1))

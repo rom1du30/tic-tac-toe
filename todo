@@ -1,18 +1,9 @@
-TO DO :
 
 			À FAIRE :
 
-- Fonction aléatoire pour choix du premier joueur
-- Fonction coup gagnant = arrêt de la partie sinon continu
-- Commenter
-- Faire le manuel
-- Intelligence artificielle
 
 			EN COURS :
-			
-- Fonction de vérification si case déjà utilisée => Romain
-- Fonction de comptage des coups, quand = 9 -> arrêt de la partie => Clément & Gaël
-			
+						
 			
 			TERMINÉ :
 			
@@ -20,3 +11,10 @@ TO DO :
 - Fonction J1 = X
 - Fonction J2 = O
 - Fonction placement du X ou O : pavé numérique / demande de colonne et ligne
+- Fonction de vérification si case déjà utilisée
+- Fonction de comptage des coups, quand
+- Fonction aléatoire pour choix du premier joueur
+- Fonction coup gagnant = arrêt de la partie sinon continu
+- Commenter
+- Manuel
+- Intelligence artificielle
