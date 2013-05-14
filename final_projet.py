@@ -1,4 +1,4 @@
-# Tic Tac Toe par Romain Scohy, Nouguier Clément et Gaël Foppolo
+# Tic Tac Toe par Nouguier Clément, Romain Scohy et Gaël Foppolo
 
 import random
 
