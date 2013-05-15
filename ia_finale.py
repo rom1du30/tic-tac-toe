@@ -1,3 +1,5 @@
+import sys
+
 t0 = ["A","B","C"]
 t1 = [" "]*3
 t2 = [" "]*3
@@ -5,7 +7,6 @@ t3 = [" "]*3
 
 T = (t0,t1,t2,t3)
 
-import sys
 
 def changementJoueur(T):
             print("(L'IA commence toujours)")
