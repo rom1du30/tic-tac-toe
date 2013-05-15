@@ -24,7 +24,7 @@ def player1(T):
     tour = 0
     while turn<10:
         coup = int(input("Quel est votre coup?"))
-        if coup == 1 and t3[0] == " ":
+        if coup == 1 and t3[0] == " ": 
             t3[0] = "O"
             Win(T)
             if tour == 0:
