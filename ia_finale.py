@@ -26,7 +26,6 @@ def player1(T):
         if coup == 1 and t3[0] == " ":
             t3[0] = "O"
             Win(T)
-            print(tour)
             if tour == 0:
                 IA9(T)
                 tour = 719
